@@ -1,0 +1,78 @@
+:root {
+    --type-electric: #F8D030;
+    --type-fire: #F08030;
+    --type-water: #6890F0;
+    --type-grass: #78C850;
+    --type-poison: #A040A0;
+}
+
+.electric {
+    background-color: var(--type-electric);
+}
+.fire {
+    background-color: var(--type-fire);
+}
+.water {
+    background-color: var(--type-water);
+}
+.grass {
+    background-color: var(--type-grass);
+}
+.poison {
+    background-color: var(--type-poison);
+}
+
+body{
+    background-color: rgb(202, 211, 211);
+}
+
+.card{
+    max-width: 450px;    
+    cursor: pointer ;
+    border-radius: 1rem;
+}
+
+.card:hover{
+    transform: scale(0.9);  
+}
+
+.pokemon-imagen img{
+    margin-left: auto;
+    
+}
+.card-body{
+    /*text-transform: uppercase; /*Se usa para transformar el texto en mayuscula*/
+    text-align: center;
+}
+
+.pokemon-tipos
+{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    flex-wrap: wrap;    
+    
+}
+
+.tipo{
+    padding: .20rem .20rem;
+    border-radius: 10px;
+}
+
+.pokemon-todos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;  
+}
+
+@media screen and (min-width: 470px) {
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
