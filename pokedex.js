@@ -13,11 +13,13 @@ function mostrarPokemon(pokem){
             `<p class="${type.type.name} tipo">${type.type.name}</p>`);
 
     tipos = tipos.join('');
+
+    let color = pokem.types.map((type) => (type.type.name))
     
     const div = document.createElement("div");
     div.classList.add("pokemon");
     div.innerHTML = `
-        <div class="card mb-0">
+        <div class="card ${color[0]+"-bg"} mb-0">
             <div class="row">
                 <div class="col-lg-6">                        
                         <div class="card-body">

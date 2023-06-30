@@ -1,25 +1,40 @@
 :root {
-    --type-electric: #F8D030;
-    --type-fire: #F08030;
-    --type-water: #6890F0;
-    --type-grass: #78C850;
-    --type-poison: #A040A0;
-}
-
-.electric {
-    background-color: var(--type-electric);
-}
-.fire {
-    background-color: var(--type-fire);
-}
-.water {
-    background-color: var(--type-water);
-}
-.grass {
-    background-color: var(--type-grass);
-}
-.poison {
-    background-color: var(--type-poison);
+    --type-normal-bg: #A8A878;
+    --type-normal: #868648;
+    --type-fire-bg: #e67f37;
+    --type-fire: #ca6014;
+    --type-water-bg: #6890F0;
+    --type-water: #2c56ba;
+    --type-grass-bg: #78C850;
+    --type-grass: #4ca121;
+    --type-electric-bg: #F8D030;
+    --type-electric: #c8a620;
+    --type-ice-bg: #98D8D8;
+    --type-ice: #38afaf;
+    --type-fighting-bg: #ef453c;
+    --type-fighting: #981c15;
+    --type-poison-bg: #b149b1;
+    --type-poison: #852185;
+    --type-ground-bg: #E0C068;
+    --type-ground: #a78629;
+    --type-flying-bg: #A890F0;
+    --type-flying: #6548be;
+    --type-psychic-bg: #F85888;
+    --type-psychic: #c83863;
+    --type-bug-bg: #A8B820;
+    --type-bug: #808c14;
+    --type-rock-bg: #B8A038;
+    --type-rock: #957f1e;
+    --type-ghost-bg: #705898;
+    --type-ghost: #4b2d7b;
+    --type-dark-bg: #705848;
+    --type-dark: #544134;
+    --type-dragon-bg: #7038F8;
+    --type-dragon: #5a23da;
+    --type-steel-bg: #B8B8D0;
+    --type-steel: #6c6c73;
+    --type-fairy-bg: #F0B6BC;
+    --type-fairy: #b97b81;
 }
 
 body{
@@ -30,6 +45,7 @@ body{
     max-width: 450px;    
     cursor: pointer ;
     border-radius: 1rem;
+    margin-top: 1.9rem;
 }
 
 .card:hover{
@@ -38,6 +54,7 @@ body{
 
 .pokemon-imagen img{
     margin-left: auto;
+    margin-top: -50px;
     
 }
 .card-body{
@@ -59,6 +76,15 @@ body{
     border-radius: 10px;
 }
 
+.buscar{
+    display: flex;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
 .pokemon-todos{
     display: grid;
     grid-template-columns: 1fr;
@@ -75,4 +101,131 @@ body{
     .pokemon-todos{
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.normal {
+    background-color: var(--type-normal);
+}
+
+.normal-bg{
+    background-color: var(--type-normal-bg);
+}
+
+.fire-bg {
+    background-color: var(--type-fire-bg);
+}
+.fire {
+    background-color: var(--type-fire);
+}
+
+.water-bg {
+    background-color: var(--type-water-bg);
+}
+.water {
+    background-color: var(--type-water);
+}
+
+.grass-bg {
+    background-color: var(--type-grass-bg);
+}
+.grass {
+    background-color: var(--type-grass);
+}
+
+.electric-bg {
+    background-color: var(--type-electric-bg);
+}
+.electric {
+    background-color: var(--type-electric);
+}
+
+.ice-bg {
+    background-color: var(--type-ice-bg);
+}
+.ice {
+    background-color: var(--type-ice);
+}
+
+.fighting-bg {
+    background-color: var(--type-fighting-bg);
+}
+.fighting {
+    background-color: var(--type-fighting);
+}
+
+.poison-bg {
+    background-color: var(--type-poison-bg);
+}
+.poison {
+    background-color: var(--type-poison);
+}
+
+.ground-bg {
+    background-color: var(--type-ground-bg);
+}
+.ground {
+    background-color: var(--type-ground);
+}
+
+.flying-bg {
+    background-color: var(--type-flying-bg);
+}
+.flying {
+    background-color: var(--type-flying);
+}
+
+.psychic-bg {
+    background-color: var(--type-psychic-bg);
+}
+.psychic {
+    background-color: var(--type-psychic);
+}
+
+.bug-bg {
+    background-color: var(--type-bug-bg);
+}
+.bug {
+    background-color: var(--type-bug);
+}
+
+.rock-bg {
+    background-color: var(--type-rock-bg);
+}
+.rock {
+    background-color: var(--type-rock);
+}
+
+.ghost-bg {
+    background-color: var(--type-ghost-bg);
+}
+.ghost {
+    background-color: var(--type-ghost);
+}
+
+.dark-bg {
+    background-color: var(--type-dark-bg);
+}
+.dark {
+    background-color: var(--type-dark);
+}
+
+.dragon-bg {
+    background-color: var(--type-dragon-bg);
+}
+.dragon {
+    background-color: var(--type-dragon);
+}
+
+.steel-bg {
+    background-color: var(--type-steel-bg);
+}
+.steel {
+    background-color: var(--type-steel);
+}
+
+.fairy-bg {
+    background-color: var(--type-fairy-bg);
+}
+.fairy {
+    background-color: var(--type-fairy);
 }
